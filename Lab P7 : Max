@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <math.h>
+int main() {
+    int a,b,c ;
+    printf("Enter num1 = ");
+    scanf("%d",&a);
+    printf("Enter num2 = ");
+    scanf("%d",&b);
+    printf("Enter num3 = ");
+    scanf("%d",&c);
+    if( a > b){
+        if (b>c){
+        printf("num2 is the largest");
+        }else{
+        printf("num3 is the largest");}}
+    else if (b>a){
+        if (b>c){
+            printf("num2 is the largest");
+        }else{
+            printf("num3 is the largest");}}
+    
+return 0;
+}

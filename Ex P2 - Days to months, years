@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+int km, mil;
+    printf("Distance in km:");
+    scanf("%d",&km);
+    printf("Distance in miles:");
+    scanf("%d",&mil);
+    float km_to_mil = mil*(0.621);
+    float mil_to_km = km*(1.609);
+    printf("Distance (km to miles): %f\n",km_to_mil);
+    printf("Distance (miles to km): %f",mil_to_km);
+return 0 ; }

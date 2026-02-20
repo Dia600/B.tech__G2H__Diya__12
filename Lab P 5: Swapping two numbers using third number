@@ -10,6 +10,6 @@ int main() {
     b = c ;
     printf("After swapping\n");
     printf("number1 = %d\n",a);
-    printf("number2 = %d\n",b)
+    printf("number2 = %d\n",b);
     return 0;
 }

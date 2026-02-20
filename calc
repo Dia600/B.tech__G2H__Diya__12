@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a,b,mul,add,sub,divide;
+    char o ;
+    printf("Enter the number:\n");
+    scanf("%f",&a);
+    printf("operator(+,-,*,/):\n");
+    scanf(" %c",&o);
+    printf("Enter the number:\n");
+    scanf("%f",&b);
+    mul= a*b;
+    add = a+b;
+    sub= a-b;
+    divide = a/b;
+    if(o=='*')
+        printf("%f",mul);
+    else if(o=='+')
+        printf("%f",add);
+    else if(o=='-')
+        printf("%f",sub);
+    else if(o=='/')
+        printf("%f",divide);
+    else 
+        printf("Invalid input");
+    
+     return 0;
+}

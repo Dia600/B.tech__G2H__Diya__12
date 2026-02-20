@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int a,b,c ;
+    printf("Enter 1 side: ");
+    scanf("%d",&a);
+    printf("Enter 2 side: ");
+    scanf("%d",&b);
+    printf("Enter 3 side: ");
+    scanf("%d",&c);
+    if(a+b>c||b+c>a||a+c>b)
+    {
+        printf("Valid triangle\n");
+        if (a==b && b==c)
+        printf("The triangle is equilateral");
+        else if(a==b||b==c||c==a)
+        printf("The traingle is isosceles");
+        else
+        printf("The traingle is scalane");
+    }
+    else 
+    printf("Invalid Triangle");
+  
+     return 0;
+}

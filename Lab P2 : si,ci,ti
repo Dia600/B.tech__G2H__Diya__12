@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int p,r,t,product,si,ci,ti;
+    printf("Enter the principal amount:");
+    scanf("%d",&p);
+    printf("Enter the rate of interest per annum:");
+    scanf("%d",&t);
+    product =p*r*t ;
+    si = product/100;
+    printf("The simple interest is: %d\n",si);
+    ci = p*pow(1+(r/100.0),t)-p;
+    printf("The comp int is %d",ci);
+    return 0;
+}

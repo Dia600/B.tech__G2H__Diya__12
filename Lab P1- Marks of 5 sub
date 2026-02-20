@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int sub1,sub2,sub3,sub4,sub5;
+    printf("Enter the marks of 5 subjetcs=\n");
+    scanf("%d %d %d %d %d",&sub1,&sub2,&sub3,&sub4,&sub5);
+    int add = sub1+sub2+sub3+sub4+sub5;
+    printf("Your marks=%d\n",add);
+    int perc = add/5;
+    printf("The percentage is %d",perc);
+    return 0;
+}

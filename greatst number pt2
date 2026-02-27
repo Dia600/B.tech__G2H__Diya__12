@@ -1,0 +1,50 @@
+# include<stdio.h>
+int main(){
+    int a,b,c;
+    printf("Enter num1 : ");
+    scanf("%d",&a);
+    printf("Enter num2 : ");
+    scanf("%d",&b);
+    printf("Enter num3 : ");
+    scanf("%d",&c);
+    if (a==b && b==c ){
+        printf("All the numbers are same!");
+    }
+    else if (a==b){
+        if (a>c){
+            printf("num1 and num2 are the same and are greater than num3.");
+        }
+        else{
+            printf("num3 is the greatest");
+        }
+    }
+    else if (b==c){
+        if(b>a){
+            printf("num2 and num3 are the same and are greater than num1");
+        }
+        else {
+            printf("num1 is greatest.");
+        }
+    }
+    else if (a==c){
+        if(a>b){
+            printf("num1 and num3 are the same and are greater than num2");
+        }
+        else {
+            printf("num2 is greatest.");
+        }
+    }
+    else if (a>b){
+        if(a>c){
+        printf("num1 is the greatest.");}
+        else{
+        printf("num3 is the greatest.");}
+    }
+    else if (b>a){
+        if(b>c){
+            printf("num2 is the greatest.");}
+        else {
+            printf("num3 is the greatest.");}
+    }
+    return 0;
+}

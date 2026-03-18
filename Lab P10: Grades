@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main(){
+    int sub1,sub2,sub3,sub4,sub5;
+    printf("Enter number of sub1:");
+    scanf("%d",&sub1);
+    printf("Enter number of sub2:");
+    scanf("%d",&sub2);
+    printf("Enter number of sub3:");
+    scanf("%d",&sub3);
+    printf("Enter number of sub4:");
+    scanf("%d",&sub4);
+    printf("Enter number of sub5:");
+    scanf("%d",&sub5);
+    float percentge = (sub1+sub2+sub3+sub4+sub5)/5;
+    if (percentge>90)
+    {
+        printf("Congratulations!You got grade A");
+    }
+    else if (percentge>80)
+    {
+        printf("You got grade B.");
+    }
+    else if (percentge>60)
+    {
+        printf("you got grade C");
+        
+    }
+    
+
+}

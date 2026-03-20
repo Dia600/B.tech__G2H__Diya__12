@@ -1,0 +1,24 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int size,i,sum=0 ;
+    printf("Enter size of an array:");
+    scanf("%d",&size);
+    int arr1[size];
+    printf("Enter %d elements of an array:\n",size);
+    for (i=0; i<size; i++)
+    {
+        scanf("%d",&arr1[i]);
+        
+    }
+    for (i=0; i<size; i++)
+    {
+        sum += arr1[i];
+    }
+    printf("Sum of elements: %d\n",sum);
+   
+    
+    
+    return 0;
+}

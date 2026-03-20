@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int num1,num2;
+    char oper;
+    printf("Enter num1:\n");
+    scanf("%d",&num1);
+    printf("Enter oper(*,+,-,/):\n");
+    scanf(" %c",&oper);
+    printf("Enter num2:\n");
+    scanf("%d",&num2);
+    
+    int mul = num1*num2;
+    int add = num1+num2;
+    int sub = num1-num2;
+    int divis = num1/num2 ;
+    switch(oper){
+        case '*':
+        printf("Ans is:%d",mul);
+        break;
+        case '+':
+        printf("Ans is:%d",add);
+        break;
+        case '-':
+        printf("Ans is:%d",sub);
+        break;
+        case '/':
+        printf("Ans is:%d",divis);
+        break;
+        
+    }
+    
+    return 0;
+}

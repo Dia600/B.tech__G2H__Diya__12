@@ -19,7 +19,6 @@ int main() {
             max = arr[i];
         }
     }
-    printf("The largest element:%d",max);
-}
+    printf("The largest element:%d",max);}
     return 0;
 }

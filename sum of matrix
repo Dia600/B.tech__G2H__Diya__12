@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+    {
+        int m,n,sum=0;
+        printf("Enter rows:");
+        scanf("%d",&m);
+        printf("Enter column:");
+        scanf("%d",&n);
+        int mat1[m][n];
+        printf("Enter elements of mat1:");
+        for(int i=0; i<m;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                scanf("%d",&mat1[i][j]);
+            }
+        }
+        int mat2[m][n];
+        printf("Enter elements of mat2:");
+        for(int i=0; i<m;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                scanf("%d",&mat2[i][j]);
+            }
+        }
+        
+        for(int i=0;i<m;i++)
+        {
+            
+            for(int j=0;j<n;j++)
+            {
+                sum = mat1[i][j]+mat2[i][j];
+                printf("%d ",sum);
+            }
+            printf("\n");
+        }   
+        return 0;
+    }
